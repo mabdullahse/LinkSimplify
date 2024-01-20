@@ -1,0 +1,7 @@
+
+Connect to docker mongodb
+
+docker pull mongodb/mongodb-community-server
+docker run --name mongo -p 27107:27107 -d mongodb/mongodb-community-server:latest
+docker container ls
+docker exec -it mongo mongosh
