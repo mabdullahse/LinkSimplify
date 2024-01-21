@@ -1,6 +1,4 @@
-Certainly! Below is a `README.md` template for a Node.js project focused on creating short URLs. This project includes JWT token authentication and uses Mongoose for MongoDB interactions. You can tailor this template to fit the specific details of your project.
-
----
+ 
 
 # Node.js URL Shortener
 
