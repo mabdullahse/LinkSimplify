@@ -8,10 +8,11 @@ async function hanleGenerateNewShortURL(req, res) {
   if (!body) return res.status(400).json({ error: "URL is missing" });
   const shortID = shortId();
 
-  console.log(body);
+  console.log(req.user);
   await URL.create({
     shortID,
     redirectURL: body.url,
+    createdBy: req.user.id,
     visitHistory: [],
   });
 

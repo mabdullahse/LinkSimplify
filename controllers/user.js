@@ -46,7 +46,11 @@ const signin = async (req, res) => {
     return;
   }
 
+  console.log(user);
+
   const token = createJWT(user);
+  // res.cookie("authentication-token", token);
+  //  return res.status(200).json({ msg: "lggined" });
   res.json({ token });
 };
 
